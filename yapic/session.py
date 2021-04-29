@@ -62,7 +62,7 @@ class Session(object):
         
         self.dataset = Dataset(_connector)
 
-        msg = '\n\nImport taining dataset:\n{}\n'.format(
+        msg = '\n\nImport training dataset:\n{}\n'.format(
             self.dataset.pixel_connector.__repr__())
         sys.stdout.write(msg)
 
@@ -174,7 +174,7 @@ class Session(object):
         valfraction : float
             Approximate fraction of validation data. Has to be between 0 and 1.
         '''
-        msg = ('\nConfiuring validation dataset '
+        msg = ('\nConfiguring validation dataset '
                '({} validation data, {} training data)').format(
                    valfraction,
                    1 - valfraction)
